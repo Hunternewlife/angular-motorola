@@ -1,0 +1,52 @@
+.navbar{
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+span, a{
+    margin-right: 2rem;
+}
+
+
+.blueFont {
+    color: #005EB8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.button {
+    background-color: #000;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+mat-icon{
+    height: 38px;
+    font-size: 38px;
+}
+
+mat-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .blueFont, .responsiveHide {
+        display: none;
+    }
+
+    mat-icon{
+        display: inline;
+    }
+ }
+
+  
+
+
+
+

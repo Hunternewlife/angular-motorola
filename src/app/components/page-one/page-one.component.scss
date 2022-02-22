@@ -1,0 +1,299 @@
+.backGround{
+    background-image: url(../../../assets/images/largest-companies-chicago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 636px;
+}
+
+mat-grid-list{
+    background: linear-gradient(270deg, rgba(0, 94, 184, 0.5) 0%, rgba(1, 33, 64, 0.87) 66.75%); 
+    min-height: 636px;
+}
+
+mat-grid-tile{
+    height: fit-content;
+    min-height: 636px;
+}
+
+.containerFlex{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    position: relative;
+    bottom: 5vh;
+}
+
+.bigFont{
+    color: #fff;
+    font-size: 2.8vw;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+.opacityFont{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #CCCCCC;
+    margin-bottom: 1.2vh;
+    line-height: 1.3em;
+    font-size: 1.6vw;
+}
+
+.regularFont{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-bottom: 1.2vh;
+    line-height: 1.1em;
+    font-size: 1vw;
+}
+
+button{
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+    height: 40px;
+    width: 16vw; 
+}
+
+.buttonB{
+    height: 45px;
+    width: 21.6vw; 
+    font-size: 1.2vw;
+}
+
+.containerForm{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    padding-bottom: 60px;
+    margin: 30px 0;
+}
+
+.blueFont {
+    color: #4D8ECD;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 450;
+    font-size: 1.5vw;
+    margin-top: 60px;
+}
+
+.fields{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 0% 3%;
+}
+
+.mat-form-field{
+    color: #000;
+}
+
+::ng-deep .mat-form-field-wrapper{
+    padding-bottom: 5px !important;
+}
+
+.mat-form-field input, mat-select{
+    background-color: white;
+    height: 38px;
+    padding-left: 10px;
+}
+
+.mat-form-field input{
+    width: 16vw;
+}
+
+.mat-select{
+    width: 16vw;
+}
+.mat-form-field mat-label, .field mat-label{
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 0.5px;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+::ng-deep .mat-select-arrow-wrapper {
+    font-size: 38px;
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+
+::ng-deep .mat-select-value{
+    color: #000;
+    position: relative;
+    top: 10px;
+}
+
+::ng-deep .mat-select-panel{
+    color: #123456;
+    position: relative;
+    top: 50px;
+}
+
+.updates{
+    width: 90%;
+    display: flex;
+    gap: 1vw;
+}
+
+.lore{
+    font-weight: 500;
+    font-size: 0.86vw;
+    color: #fff;
+}
+
+[type="checkbox"]{display: none;}
+
+label{
+    padding-left: 13px;
+    position: relative;
+}
+
+label::before{
+    content: "";
+    border: solid 1px #4DBFE9;
+    border-radius: 2px;
+    width: 0.9vw;
+    height: 0.9vw;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+[type="checkbox"]:checked + label::before{
+    background-color: #4DBFE9;
+}
+
+.statement{
+    color: #4D8ECD;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 1500px){
+    .buttonA{
+        height: 45px;
+        width: 216px; 
+        font-size: 16px;
+    }
+    .buttonB{
+        height: 50px;
+        width: 300px; 
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+
+    .blueFont, .opacityFont{
+        font-size: 1.8vw;
+    }
+
+    .regularFont, .mat-form-field mat-label, .field mat-label{
+        font-size: 1.2vw;
+    }
+
+    .lore{
+        font-size: 1.1vw;
+    }
+
+    .bigFont{
+        font-size: 3vw;
+    }
+
+    .mat-form-field{
+        width: 16vw;
+    }
+
+    label::before{
+        width: 15px;
+        height: 15px;
+    }
+
+    label{
+        padding-left: 17px;
+    }
+ }
+
+ @media only screen and (max-width: 768px) {
+    
+    .containerForm{
+        width: 100%;
+        background-color: #000;
+        margin-bottom: 70px;
+    }
+
+    .bigFont{
+        font-size: 36px;
+    }
+
+    .opacityFont{
+        font-size: 18px;
+    }
+
+    .buttonA{
+        height: 50px;
+        width: 226px; 
+        font-size: 14px;
+    }
+
+    .blueFont{
+        font-size: 20px;
+        text-align: center;
+        width: 95%;
+        font-weight: 400;
+        margin-top: 100px;
+    }
+
+    .regularFont{
+        font-size: 14px;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .lore{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .fields{
+        grid-template-columns: 1fr;
+    }
+
+    .mat-form-field mat-label, .field mat-label{
+        font-size: 14px;
+    }
+
+    .mat-form-field, .mat-form-field input, .mat-select{
+        width: 98%;
+        margin: 0px auto;
+    }
+
+    .lore{
+        text-align: left;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    
+    .buttonB{
+        height: 56px;
+        width: 302px; 
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    label{
+        padding-left: 10px;
+    }
+
+ }

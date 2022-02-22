@@ -1,0 +1,63 @@
+<div class="backGround">
+    <mat-grid-list cols="12" rowHeight="83vh">
+        <mat-grid-tile [colspan]="isMobile ? 0 : 1"> </mat-grid-tile>
+        <mat-grid-tile [colspan]="isMobile ? 12 : 5">
+            <div class="containerFlex">
+                <div class="bigFont"> GOVERNMENT GRANTS & GRANTS ASSISTANCE WITH MOTOROLA SOLUTIONS </div>    
+                <div class="opacityFont">In partnership with the grant experts at Lexipol, Motorola Solutions offers free grant assistance for your organization from radios to video, software to cybersecurity, we’ve got you covered.</div>
+                <button class="buttonA" mat-raised-button>SEE RECENT GRANTS</button>
+            </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="isMobile? 12: 5"> 
+            <form class="containerForm">
+                <div class="blueFont">
+                    STAY UP TO DATE ON GRANTS
+                </div>
+                <div class="regularFont">
+                    Grant assistance programs are only available to US customers
+                </div>
+                <div class="fields">
+                    <mat-form-field floatLabel="always">
+                        <mat-label>First Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Email</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Organization Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Industry</mat-label>
+                        <mat-select>
+                            <mat-option *ngFor="let industry of industries" [value]="industry.value">
+                              {{industry.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field floatLabel="always">
+                        <mat-label>Country</mat-label>
+                        <input matInput placeholder="United states">
+                    </mat-form-field>
+                </div>
+                <div class="updates">
+                    <div>
+                        <input type="checkbox" id="active">
+                        <label for="active"></label>
+                    </div>
+                    
+                    <p class="regularFont lore"> Yes, I would like to receive updates, product news and promotional materials from Motorola Solutions. Please review our <span class="statement">privacy statement</span> for more details.
+                    </p>
+                </div>
+                <button mat-raised-button class="buttonB">REQUEST A DEMO</button>
+            </form>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

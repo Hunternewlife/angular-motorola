@@ -1,0 +1,24 @@
+<div class="background">
+    <div class="lore">
+        <h1>Grant Assistance By Products</h1>
+        <p>Get help with grant funding for your specific product needs. Browse grant assistance programs by products.</p>
+    </div>
+    <section class="section">
+        <owl-carousel-o [options]="customOptions" class="cards">
+            <ng-template carouselSlide class="card" *ngFor="let card of cards">
+               <section>
+                <div class="icon">
+                    <mat-icon color="primary">{{card.iconName}}</mat-icon>
+                </div>
+                <div class="data">
+                    <div class="cardTitle">{{card.name}}</div>
+                    <div class="dataCol" *ngFor="let item of card.items">
+                    <div class="text">{{item}}</div>
+                    </div>
+                </div>     
+               </section>
+              </ng-template> 
+        </owl-carousel-o>
+    </section>
+</div>
+
