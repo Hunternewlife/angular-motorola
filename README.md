@@ -6,22 +6,36 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Grettings
+Hello, 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I hope this test is good enought for you all, I really enjoy working on it!!
+In order to reproduce it in your local enviroment please follow next steps
 
-## Build
+## instructions
+prerequisites
+--- node.js 
+----------- follow installation guide https://phoenixnap.com/kb/install-node-js-npm-on-windows
+--- Angular
+----------- run command "npm install angular"
+----------- if you have problems please see this guide https://www.npmjs.com/package/angular
+--- git/github
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Steps
 
-## Running unit tests
+---- Clone repository
+---- Open project 
+---- run command "npm install" 
+---- run ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## responsivenes 
 
-## Running end-to-end tests
+I have created a full resposive mainly base on vw sizes but also rem, vh. using difernt approaches to the layouts so please take a look at the code, for example changing grid colums in angular by directives, using view ports in scss to change views and resizing based on the mot commong W * H dimensions. 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## contact or questions 
 
-## Further help
+if you have any question or a problem with this project please let me know 
++57 3213939026
+Carlos David Rueda
+carlosdavidrueda@hotmail.com
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
