@@ -1,5 +1,16 @@
 <div class="container">
-    <div  *ngFor="let item of posts" class="item">
-        
+    <div class="title">
+        Recent Grants
     </div>
+    <div  class="items">
+        <div class="item" *ngFor="let item of posts;  let i=index; let last = last;">
+            <div class="itemLevel" *ngIf="i < (isMobile? number:6)">
+                <div class="itemTitle">{{item.title}}</div>
+                <div class="content">{{item.content}}</div>
+            </div>   
+        </div>
+    </div>
+    <button  mat-button id="but" (click)="isMobile? number = number + 1: number = number + 3">See more resources</button>
+    <div class="blur"></div>
+    
 </div>

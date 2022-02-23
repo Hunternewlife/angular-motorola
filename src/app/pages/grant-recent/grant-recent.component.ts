@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 interface Post {
   title : String,
@@ -12,6 +13,8 @@ interface Post {
 })
 export class GrantRecentComponent implements OnInit {
 
+  public isMobile: boolean = false;
+  public number = 3;
   posts : Post[] = [
     {
       title: 'FY21 Byrne justice Assistance Grant',
@@ -36,11 +39,29 @@ export class GrantRecentComponent implements OnInit {
     {
       title: 'FY21 Emergency Management Performance Grant',
       content: '$355.1M in funds, the EMPG provides grants to states to assist local, territorial, and tribal gov preparing for hazards.'
-    },
+    }
   ]
-  constructor() { }
+
+  newPosts : Post[] = [];
+  constructor(breakpointObserver: BreakpointObserver) {
+    breakpointObserver.observe([
+      '(max-width: 768px)'
+    ]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
+   }
 
   ngOnInit(): void {
+    
   }
 
+  additems(){
+    if(this.isMobile){
+      this.number += 2;
+      console.log(this.number);
+    } else {
+      this.number += 3;
+      console.log(this.number);
+    }
+  }
 }
