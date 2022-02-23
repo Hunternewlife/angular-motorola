@@ -43,7 +43,15 @@ mat-icon{
     mat-icon{
         display: inline;
     }
- }
+}
+
+
+@media only screen and (max-width: 490px) {
+
+    img{
+        height: 28px;
+    }
+}
 
   
 

@@ -8,7 +8,9 @@
             <ng-template carouselSlide class="card" *ngFor="let card of cards">
                <section>
                 <div class="icon">
-                    <mat-icon color="primary">{{card.iconName}}</mat-icon>
+                    <div class="svg">
+                        <img [src]="card.iconName" alt="nosvg">
+                    </div>
                 </div>
                 <div class="data">
                     <div class="cardTitle">{{card.name}}</div>

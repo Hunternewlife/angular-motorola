@@ -17,22 +17,22 @@ export class PageTwoComponent implements OnInit {
   cards: Card[] = [
     {
       name: "Mission-Critical Communications", 
-      iconName: "settings_remote",
+      iconName: "../../assets/images/radio.svg",
       items: ["P25 Police Radios", "P25 Fire Radios", "Education Portable Radios", "Professional Portable Radios", "Healthcare Portable Radios", "Fire Pager Fire", "Station Alerting", "Fire Personnel Accountability"]
     },
     {
       name: "Video Security & Access Control", 
-      iconName: "chrome_reader_mode",
+      iconName: "../../assets/images/disk.svg",
       items: ["Police Body-Worn Cameras", "Police License Plate Readers", "Police In Car Video", "Police Video Surveillance", " Education Video Security", "Healthcare Video Security", "Healthcare Access Control"]
     },
     {
       name: "Command Center Software", 
-      iconName: "screen_lock_landscape",
+      iconName: "../../assets/images/center.svg",
       items: ["Police NG9-1-1 Software", "Police Dispatch Software (CAD)", "Police Records Management Software (RMS)", "Police Evidence Management"]
     },
     {
       name: "Cybersecurity Services", 
-      iconName: "security",
+      iconName: "../../assets/images/security.svg",
       items: ["Cybersecurity Advisory Services", "Managed Security Services", "Cybersecurity Training", "Security Patching"]
     }
   ];

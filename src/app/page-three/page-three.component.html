@@ -1,1 +1,20 @@
-<p>page-three works!</p>
+<div class="background">
+    <div class="items">
+        <div class="lore">
+            <div class="text">
+                <h1>Grant Assistance By Industry</h1>
+                <p>Get help with grant funding for your specific product needs. Browse grant assistance programs by industry.</p>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="item" *ngFor="let perk of perks">
+                <img [src]="perk.iconPath" class="image" height="38px">
+                <div class="name">{{perk.name}}</div>
+                <div class="info">{{perk.info}}</div>
+                <button mat-button class="buton">Learn more</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
