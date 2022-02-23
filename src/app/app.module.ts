@@ -12,6 +12,9 @@ import { GovernmentGrantsComponent } from './pages/government-grants/government-
 import { GrantProductsComponent } from './pages/grant-products/grant-products.component';
 import { GrantIndustryComponent } from './pages/grant-industry/grant-industry.component';
 import { GrantResourcesComponent } from './pages/grant-resources/grant-resources.component';
+import { GrantRecentComponent } from './pages/grant-recent/grant-recent.component';
+import { GrantPartnersComponent } from './pages/grant-partners/grant-partners.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { GrantResourcesComponent } from './pages/grant-resources/grant-resources
     GovernmentGrantsComponent,
     GrantProductsComponent,
     GrantIndustryComponent,
-    GrantResourcesComponent
+    GrantResourcesComponent,
+    GrantRecentComponent,
+    GrantPartnersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

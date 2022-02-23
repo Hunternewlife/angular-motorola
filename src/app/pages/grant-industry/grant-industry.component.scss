@@ -30,7 +30,8 @@ p{
     display: grid;
     grid-gap: 2em;
     width: 90%;
-    margin: 15px auto;
+    margin: 0px auto;
+    margin-top: 15px;
     grid-template-columns: repeat(auto-fit, minmax(307px, 351px));
     justify-content: center;
     padding-bottom: 60px;
