@@ -7,12 +7,12 @@ interface Industry {
 }
 
 @Component({
-  selector: 'app-page-one',
-  templateUrl: './page-one.component.html',
-  styleUrls: ['./page-one.component.scss']
+  selector: 'app-government-grants',
+  templateUrl: './government-grants.component.html',
+  styleUrls: ['./government-grants.component.scss']
 })
-export class PageOneComponent implements OnInit {
-
+export class GovernmentGrantsComponent implements OnInit {
+  
   public isMobile: boolean = false;
 
   industries: Industry[] = [

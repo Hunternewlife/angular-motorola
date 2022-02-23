@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageOneComponent } from './page-one.component';
+import { GrantResourcesComponent } from './grant-resources.component';
 
-describe('PageOneComponent', () => {
-  let component: PageOneComponent;
-  let fixture: ComponentFixture<PageOneComponent>;
+describe('GrantResourcesComponent', () => {
+  let component: GrantResourcesComponent;
+  let fixture: ComponentFixture<GrantResourcesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PageOneComponent ]
+      declarations: [ GrantResourcesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PageOneComponent);
+    fixture = TestBed.createComponent(GrantResourcesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

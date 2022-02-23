@@ -1,0 +1,17 @@
+<div class="background">
+    <div class="items">
+        <div class="lore">
+            <div class="text">
+                <h1>Available Grant Resources</h1>
+                <p>From grants preparation to specific grant opportunities, you can find grant resources available for download to help your organization plan and prepare.</p>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="item" *ngFor="let card of cards">
+                <img [src]="card.imgPath" alt="no yet" height="215px" width="262">
+                <div class="name"> {{card.name}} </div>
+                <div class="link"> Learn more </div>
+            </div>
+        </div>
+    </div>
+</div>

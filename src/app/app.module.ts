@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PageOneComponent } from './components/page-one/page-one.component';
-
 import { MaterialComponentsModule } from './material-components/material-components.module';
-import { TestComponent } from './components/test/test.component';
-
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { PageThreeComponent } from './page-three/page-three.component';
+
+import { HeaderComponent } from './components/header/header.component';
+import { TestComponent } from './components/test/test.component';
+import { GovernmentGrantsComponent } from './pages/government-grants/government-grants.component';
+import { GrantProductsComponent } from './pages/grant-products/grant-products.component';
+import { GrantIndustryComponent } from './pages/grant-industry/grant-industry.component';
+import { GrantResourcesComponent } from './pages/grant-resources/grant-resources.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PageOneComponent,
     TestComponent,
-    PageTwoComponent,
-    PageThreeComponent
+    GovernmentGrantsComponent,
+    GrantProductsComponent,
+    GrantIndustryComponent,
+    GrantResourcesComponent
   ],
   imports: [
     BrowserModule,

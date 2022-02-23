@@ -8,11 +8,11 @@ interface Card {
 }
 
 @Component({
-  selector: 'app-page-two',
-  templateUrl: './page-two.component.html',
-  styleUrls: ['./page-two.component.scss']
+  selector: 'app-grant-products',
+  templateUrl: './grant-products.component.html',
+  styleUrls: ['./grant-products.component.scss']
 })
-export class PageTwoComponent implements OnInit {
+export class GrantProductsComponent implements OnInit {
 
   cards: Card[] = [
     {
@@ -68,4 +68,5 @@ export class PageTwoComponent implements OnInit {
     },
     nav: true
   }
+
 }

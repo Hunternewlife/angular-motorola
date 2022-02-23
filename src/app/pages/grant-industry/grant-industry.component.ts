@@ -7,11 +7,11 @@ interface Perk {
 }
 
 @Component({
-  selector: 'app-page-three',
-  templateUrl: './page-three.component.html',
-  styleUrls: ['./page-three.component.scss']
+  selector: 'app-grant-industry',
+  templateUrl: './grant-industry.component.html',
+  styleUrls: ['./grant-industry.component.scss']
 })
-export class PageThreeComponent implements OnInit {
+export class GrantIndustryComponent implements OnInit {
 
   perks: Perk[] = [
     {
@@ -46,6 +46,7 @@ export class PageThreeComponent implements OnInit {
     }
     
   ]
+  
   constructor() { }
 
   ngOnInit(): void {
